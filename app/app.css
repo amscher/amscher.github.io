@@ -1,0 +1,344 @@
+/* app css stylesheet */
+
+html, body {
+	width: 100%;
+	/*height: 100%;*/
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #666;
+}
+
+section {
+	width: 100%;
+}
+
+p {
+	/*margin: 1em 0 1em 0;*/
+	line-height: 2.1em;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-weight: 400;
+}
+
+a:hover {
+	font-weight: 900;
+}
+
+video {
+  width: 100%    !important;
+  height: auto   !important;
+}
+
+.emphasis-text {
+	font-weight: 400;
+}
+
+
+/*------------------------------------*/
+
+#home-body {
+	font-size: 1.25em;
+	font-size: 1.4vmax;
+	letter-spacing: 0.1em;
+	font-weight: 300;	
+}
+
+.section-content {
+	padding: 3% 0 3% 0;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/**/
+
+#hero {
+  width: 100%;
+  min-height: 270px;
+  padding-top: 3%;
+  padding-bottom: 30%;
+  background-image: url(images/run2.jpg); /* no need for qoutes */
+  background-size: cover;
+  background-position: bottom;
+}
+
+#hero .section-title {
+  position: relative;
+  left: 6%;
+	
+	text-shadow:  0px 0px 10px #666;
+	font-family: 'Sans Source Pro', sans-serif;
+	font-weight: 900;
+	font-size: 3em;
+	font-size: 3.5vmax;
+	letter-spacing: 0.15em;
+  color: white;
+}
+
+#hero .hero-caption { /* TODO figure out what to do on mobile */
+	padding-left: 6%;
+
+	text-shadow:  0px 0px 25px #666;
+	font-weight: 600;
+	font-size: 0.25em;
+	font-size: 1vmax;
+	letter-spacing: 0.15em;
+  color: white;
+}
+
+/**/
+
+.blurb-section {
+	font-size: 2em;
+	font-size: 2vmax;
+	letter-spacing: 0.3em;
+	text-align: center;
+}
+
+#home-body section:nth-child(2) {
+	color: #666;
+}
+
+#home-body section:nth-child(3) {
+	background: rgba(250, 200, 0, 1);
+	color: white;
+}
+
+/**/
+
+#square {
+	padding: 0%;
+}
+
+#square .side-img-container {
+	flex: 1;
+	background-image: url(images/square-coffee.jpg); /* no need for qoutes */
+	background-position: center;
+	background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#square .section-content-text {
+	flex: 1;
+	width: 40%;
+	padding: 10% 10% 10% 10%; 
+}
+
+/**/
+
+#google .section-content-text {
+	background: rgba(250, 200, 0, 0.6);
+	padding: 5% 20% 5% 20%;
+	color: white;
+	text-align: center;
+}
+
+.video-container {
+	background: black;
+}
+
+.video-container .section-content {
+	max-width: 1400px;
+}
+
+/**/
+
+#stanford .img-container {
+	width: 75%;
+	margin: 0 auto 0 auto;
+}
+
+#stanford .flex-container {
+	align-items: center;
+}
+
+.left-content {
+	width: 45%;
+	margin-left: 0;
+	min-width: 250px;
+}
+
+.right-content {
+	min-width: 300px;
+	width: 50%
+}
+
+.detail-text {
+	text-align: center;
+	font-size: 0.75vmax;
+}
+
+/**/
+
+#home {
+	background: rgba(250, 200, 0, 0.6);
+	color: white;
+}
+
+#home .flex-container {
+	padding: 0 0 5% 0;
+}
+
+/**/
+
+#other .section-content {
+	font-size: 2em;
+	font-size: 2vmax;
+	letter-spacing: 0.3em;
+	text-align: center;
+}
+
+#other .section-content:first-child {
+	padding: 20% 0 5% 0;
+	line-height: 2.1em;
+}
+
+#other .section-content:last-child {
+	padding: 5% 0 20% 0;
+}
+
+#other a {
+	font-size: 1.25em;
+	font-size: 1.4vmax;
+	font-weight: 600;
+}
+
+#other a:hover {
+	font-weight: 900;
+}
+
+
+/**/
+
+#footer {
+	background: rgba(250, 200, 0, 1);
+	color: white;
+	text-align: center;
+}
+
+#footer a {
+	color: white;
+}
+
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+/* TODO: center content within section-content? */
+.img-container {
+	border: 10px solid white;
+	margin-bottom: 5%;
+	min-width: 200px;
+	width: 25%;
+}
+
+img {
+	width: 100%;
+}
+
+
+/*---------------------------------------------------- RESUME ---------------------------------------------- */
+
+#resume-body {
+	padding: 5%;
+	border: 1px solid #eee;
+	width: 80%;
+	max-width: 900px;
+	min-width: 200px;
+	margin: 5% auto 5% auto;
+}
+
+.resume-section-header {
+	margin: 1em 0 1em 0;
+	
+	text-transform: uppercase;
+	font-size: 1.2em;
+	color: black;
+}
+
+.resume-section-row {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-around;
+
+	padding: 1% 0;
+
+	font-weight: 200;
+	font-size: 1em;
+	letter-spacing: 0;
+}
+
+.resume-date {
+	flex: 1;
+	margin: 0.5em 0 0.5em 0;
+	min-width: 50px;
+}
+
+.resume-entry-container {
+	flex: 5;
+	min-width: 200px;
+	margin: 0.5em 0 0.5em 0;
+}
+
+.resume-entry-title {
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.resume-entry-container p {
+	line-height: 1.4em;
+	margin: 0.5em 0 0.5em 0;
+	font-size: 0.9em;
+}
+
+.resume-entry-container.columned-entry {
+	text-align: center;
+	padding: 0 1% 0 1%;
+}
+
+.resume-section-row.dictionary-entries {
+	justify-content: flex-start;
+}
+
+.resume-section-row.dictionary-entries .resume-entry-title {
+	margin-right: 1%;
+}
+
+.back-button {
+	background: rgba(250, 200, 0, 1);
+	padding: 1%;
+}
+
+.back-button a {
+	font-weight: 200;
+	font-size: 1.2em;
+	letter-spacing: 0.1em;
+	color: white;
+}
+
+.back-button a:hover {
+	font-weight: 900;
+}
+
+
+
+
+
+
+
+
+
+
