@@ -1,8 +1,8 @@
 /* app css stylesheet */
 
-html, body {
+body {
 	width: 100%;
-	/*height: 100%;*/
+	height: 100%;
 	margin: 0px;
 	padding: 0px;
 	overflow-x: hidden;
@@ -16,7 +16,6 @@ section {
 }
 
 p {
-	/*margin: 1em 0 1em 0;*/
 	line-height: 2.1em;
 }
 
@@ -39,18 +38,52 @@ video {
 	font-weight: 400;
 }
 
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+/* TODO: center content within section-content? */
+.img-container {
+	border: 10px solid white;
+	margin: 1.2em;
+	min-width: 250px;
+}
+
+img {
+	width: 100%;
+}
+
 
 /*------------------------------------*/
 
+@media (min-width: 900px) {
+	#home-body {
+		font-size: 1.2em;
+	}
+}
+
+@media (min-width: 1500px) {
+	#home-body {
+		font-size: 1.5em;
+	}
+}
+
+@media (min-width: 2000px) {
+	#home-body {
+		font-size: 1.7em;
+	}
+}
+
 #home-body {
-	font-size: 1.25em;
-	font-size: 1.4vmax;
 	letter-spacing: 0.1em;
 	font-weight: 300;	
 }
 
 .section-content {
-	padding: 3% 0 3% 0;
+	padding: 2em 0 2em 0;
 	width: 80%;
 	margin-right: auto;
 	margin-left: auto;
@@ -60,7 +93,7 @@ video {
 
 #hero {
   width: 100%;
-  min-height: 270px;
+  min-height: 250px;
   padding-top: 3%;
   padding-bottom: 30%;
   background-image: url(images/run2.jpg); /* no need for qoutes */
@@ -68,35 +101,32 @@ video {
   background-position: bottom;
 }
 
-#hero .section-title {
-  position: relative;
-  left: 6%;
-	
+#hero div {
+	padding-right: 3%;
+	padding-left: 3%;
+}
+
+#hero .section-title {	
 	text-shadow:  0px 0px 10px #666;
 	font-family: 'Sans Source Pro', sans-serif;
 	font-weight: 900;
 	font-size: 3em;
-	font-size: 3.5vmax;
-	letter-spacing: 0.15em;
   color: white;
 }
 
-#hero .hero-caption { /* TODO figure out what to do on mobile */
-	padding-left: 6%;
-
+#hero .hero-caption { 
 	text-shadow:  0px 0px 25px #666;
 	font-weight: 600;
-	font-size: 0.25em;
-	font-size: 1vmax;
-	letter-spacing: 0.15em;
+	font-size: 0.8em;
   color: white;
 }
+
+
 
 /**/
 
 .blurb-section {
-	font-size: 2em;
-	font-size: 2vmax;
+	font-size: 1.4em;
 	letter-spacing: 0.3em;
 	text-align: center;
 }
@@ -112,29 +142,26 @@ video {
 
 /**/
 
-#square {
-	padding: 0%;
+
+#square .flex-container div {
+	flex: 1;
 }
 
 #square .side-img-container {
-	flex: 1;
 	background-image: url(images/square-coffee.jpg); /* no need for qoutes */
 	background-position: center;
 	background-size: cover;
   background-repeat: no-repeat;
 }
 
-#square .section-content-text {
-	flex: 1;
-	width: 40%;
-	padding: 10% 10% 10% 10%; 
+#square .flex-container div:first-child {
+	padding: 2em; 
 }
 
 /**/
 
-#google .section-content-text {
+#google {
 	background: rgba(250, 200, 0, 0.6);
-	padding: 5% 20% 5% 20%;
 	color: white;
 	text-align: center;
 }
@@ -149,29 +176,18 @@ video {
 
 /**/
 
-#stanford .img-container {
-	width: 75%;
-	margin: 0 auto 0 auto;
-}
-
 #stanford .flex-container {
 	align-items: center;
 }
 
-.left-content {
-	width: 45%;
-	margin-left: 0;
+#stanford .flex-container div {
+	flex: 1;
 	min-width: 250px;
-}
-
-.right-content {
-	min-width: 300px;
-	width: 50%
 }
 
 .detail-text {
 	text-align: center;
-	font-size: 0.75vmax;
+	font-size: 0.8em;
 }
 
 /**/
@@ -181,31 +197,29 @@ video {
 	color: white;
 }
 
-#home .flex-container {
-	padding: 0 0 5% 0;
+#home .img-container {
+	width: 25%;
 }
 
 /**/
 
 #other .section-content {
-	font-size: 2em;
-	font-size: 2vmax;
-	letter-spacing: 0.3em;
 	text-align: center;
+	letter-spacing: 0.3em;
 }
 
 #other .section-content:first-child {
-	padding: 20% 0 5% 0;
+	padding: 8em 0 2em 0;
+	font-size: 1.4em;
 	line-height: 2.1em;
 }
 
 #other .section-content:last-child {
-	padding: 5% 0 20% 0;
+	padding: 2em 0 8em 0;
 }
 
 #other a {
-	font-size: 1.25em;
-	font-size: 1.4vmax;
+	font-size: 1.1em;
 	font-weight: 600;
 }
 
@@ -227,42 +241,23 @@ video {
 }
 
 
-.flex-container {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-}
-
-/* TODO: center content within section-content? */
-.img-container {
-	border: 10px solid white;
-	margin-bottom: 5%;
-	min-width: 200px;
-	width: 25%;
-}
-
-img {
-	width: 100%;
-}
-
 
 /*---------------------------------------------------- RESUME ---------------------------------------------- */
 
 #resume-body {
-	padding: 5%;
+	padding: 2em;
 	border: 1px solid #eee;
 	width: 80%;
 	max-width: 900px;
 	min-width: 200px;
-	margin: 5% auto 5% auto;
+	margin: 2em auto 2em auto;
 }
 
 .resume-section-header {
-	margin: 1em 0 1em 0;
+	margin: 0.5em 0 0.5em 0;
 	
 	text-transform: uppercase;
-	font-size: 1.2em;
+	font-size: 1rem;
 	color: black;
 }
 
@@ -277,20 +272,20 @@ img {
 	padding: 1% 0;
 
 	font-weight: 200;
-	font-size: 1em;
+	font-size: 1rem;
 	letter-spacing: 0;
 }
 
 .resume-date {
 	flex: 1;
-	margin: 0.5em 0 0.5em 0;
+	margin: 0.8em 0 0.8em 0;
 	min-width: 50px;
 }
 
 .resume-entry-container {
 	flex: 5;
 	min-width: 200px;
-	margin: 0.5em 0 0.5em 0;
+	margin: 0.8em 0 0.8em 0;
 }
 
 .resume-entry-title {
@@ -299,9 +294,9 @@ img {
 }
 
 .resume-entry-container p {
-	line-height: 1.4em;
-	margin: 0.5em 0 0.5em 0;
-	font-size: 0.9em;
+	line-height: 1.4rem;
+	margin: 0.5rem 0 0.5rem 0;
+	font-size: 0.9rem;
 }
 
 .resume-entry-container.columned-entry {
@@ -324,8 +319,8 @@ img {
 
 .back-button a {
 	font-weight: 200;
-	font-size: 1.2em;
-	letter-spacing: 0.1em;
+	font-size: 1.2rem;
+	letter-spacing: 0.1rem;
 	color: white;
 }
 

@@ -9,8 +9,7 @@ angular.module('myApp.resume', ['ngRoute'])
   });
 }])
 
-.controller('ResumeCtrl', ['$scope', function($scope) {
-
+.controller('ResumeCtrl', ['$scope', '$window', function($scope, $window) {
 	$scope.resumeSections = [
 		{
 			"title" : "education",
