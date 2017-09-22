@@ -145,6 +145,7 @@ img {
 
 #square .flex-container div {
 	flex: 1;
+  min-width: 250px;
 }
 
 #square .side-img-container {
@@ -152,10 +153,11 @@ img {
 	background-position: center;
 	background-size: cover;
   background-repeat: no-repeat;
+  min-height: 200px;
 }
 
 #square .flex-container div:first-child {
-	padding: 3em; 
+	padding: 10%;
 }
 
 /**/
