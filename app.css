@@ -155,7 +155,7 @@ img {
 }
 
 #square .flex-container div:first-child {
-	padding: 2em; 
+	padding: 3em; 
 }
 
 /**/
@@ -209,13 +209,13 @@ img {
 }
 
 #other .section-content:first-child {
-	padding: 8em 0 2em 0;
+	padding: 8em 0 5em 0;
 	font-size: 1.4em;
 	line-height: 2.1em;
 }
 
 #other .section-content:last-child {
-	padding: 2em 0 8em 0;
+	padding: 3em 0 8em 0;
 }
 
 #other a {
